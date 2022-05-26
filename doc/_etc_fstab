@@ -1,0 +1,10 @@
+#
+# /etc/fstab
+# Created by anaconda on Thu Apr  7 21:28:11 2022
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/lvm_group-root /                       ext4    defaults,x-systemd.device-timeout=0 1 1
+UUID=b1958c51-3bb9-4023-a3e2-3dc5ede9ca83 /boot                   ext2    defaults        1 2
+/dev/mapper/lvm_group-swap swap                    swap    defaults,x-systemd.device-timeout=0 0 0

@@ -1,0 +1,55 @@
+
+        To list all updates that are security relevant, and get a return code on whether there are security updates use:
+
+              yum --security check-update
+
+       To upgrade packages that have security errata (upgrades to the latest available package) use:
+
+              yum --security update
+
+       To upgrade packages that have security errata (upgrades to the last security errata package) use:
+
+              yum --security update-minimal
+
+       To get a list of all BZs that are fixed for packages you have installed use:
+
+              yum updateinfo list bugzillas
+
+       To get a list of all security advisories, including the ones you have already installed use:
+
+              yum updateinfo list all security
+
+       To get the information on advisory FEDORA-2707-4567 use:
+
+              yum updateinfo info FEDORA-2707-4567
+      
+       For  Red  Hat  advisories,  respin suffixes are also accepted in the ID, although they won't have any effect on the actual
+       respin selected by yum, as it will always select the latest one available.  For example, if you use:
+
+              yum updateinfo info RHSA-2016:1234-2
+
+       while RHSA-2016:1234-3 has been shipped already, yum will select the latter (provided  your  updateinfo.xml  is  current).
+       The  same  would happen if you just specified RHSA-2016:1234.  That said, there's no need for you to specify or care about
+       the suffix at all.
+
+       To update packages to the latest version which contain fixes for Bugzillas 123, 456 and 789; and all security updates use:
+
+              yum --bz 123 --bz 456 --bz 789 --security update
+
+       To update to the packages which just update Bugzillas 123, 456 and 789; and all security updates use:
+
+              yum --bz 123 --bz 456 --bz 789 --security update-minimal
+
+       To get an info list of the latest packages which contain fixes for Bugzilla 123; CVEs CVE-2207-0123 and CVE-2207-3210; and
+       Fedora advisories FEDORA-2707-4567 and FEDORA-2707-7654 use:
+
+              yum  --bz  123 --cve CVE-2207-0123 --cve CVE-2207-3210 --advisory FEDORA-2707-4567 --advisory FEDORA-2707-7654 info
+              updates
+
+       To get a list of packages which are "new".
+
+              yum updateinfo list new
+      
+       To get a summary of advisories you haven't installed yet use:
+
+              yum updateinfo summary

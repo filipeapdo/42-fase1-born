@@ -1,0 +1,7 @@
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="rd.neednet=1 ip=192.168.15.31::192.168.15.1:255.255.255.0::enp0s3:off rd.luks.uuid=luks-4f3689db-b121-4d26-a110-ec198094d02d rd.lvm.lv=lvm_group/root rd.lvm.lv=lvm_group/swap rhgb quiet"
+GRUB_DISABLE_RECOVERY="true"

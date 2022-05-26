@@ -1,0 +1,227 @@
+    1  pwd
+    2  lsblk
+    3  halt -P
+    4  halt -p
+    5  list disks
+    6  fdisk -l
+    7  cd mn
+    8  cd mnt
+    9  cd
+   10  ls
+   11  pwd
+   12  cd ..
+   13  cd mnt/
+   14  ls
+   15  ls -la
+   16  cd ..
+   17  cd
+   18  vi /etc/fstab 
+   19  vi /etc/crypttab 
+   20  vi /etc/fstab 
+   21  ls /dev/mapper/
+   22  mv /dev/mapper/luks-4f3689db-b121-4d26-a110-ec198094d02d /dev/mapper/sda2_crypt
+   23  ls /dev/mapper/
+   24  vi /etc/crypttab 
+   25  cat /etc/crypttab 
+   26  ls /dev/mapper/
+   27  lsblk
+   28  ls /etc
+   29  ls /etc | init
+   30  ls /etc | grep init
+   31  lsblk
+   32  cryptsetup --help
+   33  man cryptsetup
+   34  reboot
+   35  lsblk
+   36  vi /etc/crypttab 
+   37  vi /etc/fstab 
+   38  lsblk
+   39  ip a
+   40  exit
+   41  lsblk
+   42  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   43  update-initramfs -u -k all
+   44  ls /dev/mapper/
+   45  update grub
+   46  update-grub
+   47  reboot
+   48  lsblk
+   49  cd /boot/grub/
+   50  ls -l
+   51  ls -la
+   52  pwd
+   53  cd
+   54  cd /dev
+   55  ls
+   56  cd mapper/
+   57  ls
+   58  ls -la
+   59  vgscan
+   60  lsblk
+   61  cd /boot/grub
+   62  ls
+   63  vi /etc/fstab 
+   64  vi /etc/crypttab 
+   65  dmsetup 
+   66  lsblk 
+   67  ls /dev/mapper/
+   68  cat /dev/mapper/control 
+   69  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   70  update-initramfs -c -t -k all
+   71  cd
+   72  cd /
+   73  ls
+   74  cd dev/
+   75  ls
+   76  cd
+   77  lsblk
+   78  ls /dev/mapper/
+   79  reboot
+   80  lsblk
+   81  vi /etc/crypttab 
+   82  dmsetup ls
+   83  ls /dev/mapper/
+   84  dmsetup table luks-4f3689db-b121-4d26-a110-ec198094d02d
+   85  vi /etc/default/grub
+   86  vi /boot/grub2/grub.cfg 
+   87  vi /etc/default/grub
+   88  lsblk
+   89  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   90  lsblk
+   91  reboot
+   92  lsblk
+   93  vi /etc/default/grub 
+   94  lsblk
+   95  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   96  lsblk
+   97  ls /dev/mapper/
+   98  grub2-mkconfig 
+   99  vi /etc/fstab 
+  100  vi /etc/crypttab 
+  101  reboot
+  102  lsbl
+  103  vi /boot/grub2/device.map 
+  104  vi /boot/grub2/grubenv 
+  105  vi /boot/grub2/grub.cfg 
+  106  vi /etc/default/grub 
+  107  vi /etc/grub2.cfg 
+  108  cd /etc/grub.d/
+  109  ls
+  110  vi README 
+  111  cd
+  112  find 4f3689db
+  113  vi /etc/grub.d/10_linux 
+  114  vi /etc/default/grub 
+  115  lsblk
+  116  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+  117  lsblk
+  118  grub2-mkconfig 
+  119  dracut --help
+  120  dracut --help | grep upda
+  121  dracut --help | grep upd
+  122  ls /dev/m
+  123  ls /dev/mapper/
+  124  cd /boot/
+  125  ls
+  126  man drac
+  127  man dracut
+  128  dracut --force
+  129  lsblk
+  130  reboot]
+  131  reboot
+  132  lvs
+  133  pvs
+  134  dracut --help | grep upd
+  135  dracut --help
+  136  dnf --help
+  137  yum --help
+  138  history | grep ^g
+  139  history | grep ^d
+  140  history | grep d
+  141  history | grep dnf
+  142  yum install cloud-utils-growpart
+  143  growpart -h
+  144  growpart /dev/sda2
+  145  growpart /dev/sda 2
+  146  pvs
+  147  pvresize /dev/sda2
+  148  pvresize /dev/sda2_crypt
+  149  pvs
+  150  pvresize /dev/mapper/sda2_crypt 
+  151  pvs
+  152  lsblk
+  153  growpart /dev/mapper/sda2_crypt 
+  154  growpart /dev/mapper/sda2_crypt 1
+  155  growpart /dev/mapper/sda2_crypt 0
+  156  growpart /dev/mapper/sda2_cryp
+  157  growpart /dev/mapper/sda2_crypt 
+  158  exa
+  159  ls
+  160  lsblk
+  161  lvs
+  162  lvcreate -n home -L 5G
+  163  lvcreate -n home -L 5G lvm_group
+  164  vgs
+  165  lvs
+  166  pvs
+  167  pvresize /dev/mapper/sda2_crypt
+  168  pvs
+  169  lsblk
+  170  vgs
+  171  vgextend lvm_group /dev/sda 2
+  172  vgextend lvm_group /dev/sda2
+  173  pvs
+  174  pvscan
+  175  resize2fs /dev/mapper/sda2_crypt 
+  176  lsblk
+  177  resize2fs --help
+  178  resize2fs
+  179  resize2fs 
+  180  resize2fs /dev/mapper/sda2_crypt 31G
+  181  resize2fs -f /dev/mapper/sda2_crypt 31G
+  182  resize2fs -p /dev/mapper/sda2_crypt 31G
+  183  resize2fs -F /dev/mapper/sda2_crypt 31G
+  184  cryptsetup --help
+  185  cryptsetup --help | grep resize
+  186  cryptsetup resize /dev/mapper/sda2_crypt 
+  187  lsblk
+  188  pvs
+  189  pvresize /dev/mapper/sda2_crypt 
+  190  pvs
+  191  vgs
+  192  lvs
+  193  lvcreate -n home -L 5G lvm_group
+  194  lsblk
+  195  lsblk --help
+  196  lsblk --help | less
+  197  lsblk -d
+  198  lsblk -f
+  199  ls /dev/mapper/
+  200  mkfs.ext4 /dev/mapper/lvm_group-home 
+  201  cd ..
+  202  ls -l
+  203  cd home/
+  204  ls
+  205  ls -la
+  206  cd ..
+  207  ls
+  208  cd
+  209  mount /dev/mapper/lvm_group-home /home
+  210  vi /etc/fstab 
+  211  df -h
+  212  lsblk
+  213  lsblk -f
+  214  history
+  215  vi /etc/default/grub 
+  216  history | grep grub
+  217  vi /etc/grub2.cfg 
+  218  vi /boot/grub2/grub.cfg 
+  219  reboot
+  220  lsblk
+  221  df -h
+  222  exit
+  223  halt -P
+  224  halt -p
+  225  ls
+  226  history
+  227  history > h3.txt

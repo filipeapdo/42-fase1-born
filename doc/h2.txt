@@ -1,0 +1,368 @@
+    1  pwd
+    2  lsblk
+    3  halt -P
+    4  halt -p
+    5  history
+    6  lsblk
+    7  pvs
+    8  vgs
+    9  lvs
+   10  history
+   11  ip --help | less
+   12  ip a
+   13  ip r
+   14  cat /etc/resolv.conf 
+   15  cd /etc/sysconfig/network-scripts/
+   16  ls -l
+   17  cd /etc/sysconfig/network-scripts/
+   18  ls -l | grep cfg
+   19  vi ifcfg-enp0s3 
+   20  cd /etc/sysconfig/network-scripts/
+   21  ls -l | grep cfg
+   22  vi ifcfg-enp0s3 
+   23  systemctl status NetworkManager.service
+   24  nmcli dev status
+   25  vi ifcfg-enp0s3 
+   26  systemctl restart network.service
+   27  ip a
+   28  reboot
+   29  ipa
+   30  ip a
+   31  systemctl status network.service
+   32  cd /etc/sysconfig/network-scripts/
+   33  vi ifcfg-enp0s3 
+   34  systemctl restart network.service
+   35  systemctl status network.service
+   36  ip a
+   37  ip --help
+   38  ip a -h
+   39  ip -h a
+   40  ip -4 a
+   41  ip --help
+   42  ip -a a
+   43  vi ifcfg-enp0s3 
+   44  man ip
+   45  ip -dh a
+   46  ip -d a
+   47  man ip
+   48  ip-address
+   49  man ip-address
+   50  ip-address
+   51  man ip
+   52  ip -d a
+   53  ping -c 3 google.com
+   54  ping google.com
+   55  ip r
+   56  vi ifcfg-enp0s3 
+   57  systemctl restart network.service
+   58  systemctl status network.service
+   59  ip r
+   60  ping -c 3 google.com
+   61  ping -c 3 192.168.15.1
+   62  vi ifcfg-enp0s3 
+   63  systemctl status network.service
+   64  systemctl restart network.service
+   65  ping -c 3 192.168.15.1
+   66  ping -c 3 google.com
+   67  halt -p
+   68  cd /etc/sysconfig/network-scripts/
+   69  vi ifcfg-enp0s3 
+   70  ping -c 3 google.com
+   71  ping -c 3 google.com
+   72  ping -c 3 192.168.15.1
+   73  systemctl status sshd.service
+   74  systemctl status ssh.service
+   75  systemctl status sshd.service
+   76  exit
+   77  cat /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+   78  exit
+   79  history
+   80  pwd
+   81  yum --help | less
+   82  yum --help
+   83  yum --help | less
+   84  yum help
+   85  yum --help | less
+   86  yum history
+   87  yum -v
+   88  yum version
+   89  yum list all
+   90  yum list installed
+   91  yum list installed | less
+   92  yum list installed | grep ssh
+   93  yum list updates
+   94  yum list updates | wc -l
+   95  yum list installed | wc -l
+   96  yum info yum
+   97  yum list installed | grep ssh
+   98  yum info openssh-server
+   99  yum grouplist
+  100  yum version
+  101  yum info yum
+  102  man yum
+  103  yum check-update
+  104  yum check-update | wc -l
+  105  man yum
+  106  yum --security check-update
+  107  yum --security check-update | less
+  108  yum updateinfo list bugzillas
+  109  yum updateinfo list all security
+  110  yum updateinfo list new
+  111  yum updateinfo summary
+  112  man yum
+  113  yum history
+  114  yum check-update
+  115  man yum
+  116  yum update
+  117  yum check-update | wc -l
+  118  man yum
+  119  vi /etc/yum.conf 
+  120  man yum
+  121  yum check-update | wc -l
+  122  yum check-update
+  123  yum check-update | less
+  124  man yum
+  125  cd /etc/yum/pluginconf.d/
+  126  ls -l
+  127  cat fastestmirror.conf 
+  128  cd
+  129  yum check-update | wc -l
+  130  yum update
+  131  yum check-update | wc -l
+  132  yum update/
+  133  yum update
+  134  man yum
+  135  yum update
+  136  yum check-update | wc -l
+  137  yum update
+  138  yum check-update
+  139  yum update
+  140  exit
+  141  lsblk
+  142  halt -p
+  143  yum history
+  144  halt -p
+  145  exit
+  146  ls
+  147  ls -la
+  148  ip a
+  149  vim
+  150  cd /etc/sysconfig/network-scripts/
+  151  ls -l | grep cfg
+  152  vi ifcfg-enp0s3 
+  153  ping -c 3 google.com
+  154  ping -c 192.168.15.1
+  155  ping -c 3 192.168.15.1
+  156  yum history
+  157  cd /etc/pki/rpm-gpg/
+  158  ls
+  159  ls -la
+  160  cat RPM-GPG-KEY-CentOS-7
+  161  gpg
+  162  gpg --with-fingerprint RPM-GPG-KEY-CentOS-7
+  163  gpg --help
+  164  man gpg
+  165  man openssl
+  166  openssl --help
+  167  ls
+  168  openssl x509 -in RPM-GPG-KEY-CentOS-7 -noout -text
+  169  cat RPM-GPG-KEY-CentOS-7
+  170  gpg --with-fingerprint RPM-GPG-KEY-CentOS-7
+  171  sestatus
+  172  lsblk
+  173  cat /etc/sysconfig/selinux 
+  174  cd /etc/selinux/
+  175  ls
+  176  ls -la
+  177  cat config 
+  178  cd /root/
+  179  ls -la
+  180  touch .autorelabel
+  181  ls -la
+  182  sudo vi /etc/selinux/config 
+  183  sudo reboot
+  184  sestatus
+  185  cat /root/.autorelabel 
+  186  history
+  187  sudo vi /etc/selinux/config
+  188  halt -p
+  189  l
+  190  ls -la
+  191  history
+  192  cd /etc/yum/pluginconf.d/
+  193  ls -la
+  194  vi fastestmirror.conf 
+  195  cd /var/cache/yum/
+  196  ls 
+  197  ls -la
+  198  cd x86_64/
+  199  ls -la
+  200  cd 7/
+  201  ls -la
+  202  cat timedhosts
+  203  cat timedhosts.txt 
+  204  cd ..
+  205  ls -la
+  206  cd 7/
+  207  ls -la
+  208  cat .gpgkeyschecked.yum 
+  209  cd base/
+  210  ls -la
+  211  cd ..
+  212  ls -la
+  213  rm timedhosts*
+  214  ls -la
+  215  yum check-update
+  216  yum update
+  217  yum uprade
+  218  yum upgrade
+  219  yum install epel-release
+  220  yum install dnf
+  221  dnf check-update
+  222  yum check-update
+  223  yum uprade
+  224  yum update
+  225  wget -O /etc/yum.repos.d/rbu-dracut-crypt-ssh-epel-7.repo https://copr.fedorainfracloud.org/coprs/rbu/dracut-crypt-ssh/repo/epel-7/rbu-dracut-crypt-ssh-epel-7.repo
+  226  yum install wget
+  227  cd
+  228  cd /etc/yum.repos.d
+  229  ls -la
+  230  cat epel.repo 
+  231  vi epel.repo 
+  232  vi rbu-dracut-crypt-ssh-epel-7.repo
+  233  yum install dracut-crypt-ssh
+  234  dracut --force
+  235  cd
+  236  ls -la
+  237  mkdir .ssh
+  238  dracut --force
+  239  cd /etc/dracut.conf.d/crypt-ssh.conf 
+  240  cd /etc/dracut.conf.d
+  241  ls -la
+  242  vi crypt-ssh.conf 
+  243  vi /etc/default/grub 
+  244  halt -p
+  245  ip a
+  246  vi /etc/default/grub
+  247  grub2-mkconfig --output /etc/grub2.cfg
+  248  dracut --force
+  249  cd /var/tmp/
+  250  ls
+  251  ls -la
+  252  cd
+  253  vi /etc/grub2.cfg 
+  254  reboot
+  255  ls -la
+  256  cat .ssh/authorized_keys
+  257  dracut -f
+  258  dracut -f -v
+  259  cat /boot/initramfs-3.10.0-1160.62.1.el7.x86_64.img 
+  260  reboot
+  261  ls
+  262  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  263  dracut -f -v
+  264  reboot 
+  265  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  266  dracut -f
+  267  dracut -f -v
+  268  reboot
+  269  cd .ssh/
+  270  ls
+  271  ls -la
+  272  cat authorized_keys 
+  273  cd
+  274  ls -la
+  275  ls -l
+  276  ls -1
+  277  ls -l
+  278  umask 0077
+  279  mkdir /root/dracut-keys
+  280  ssh-keygen -t rsa -m PEM -f /root/dracut-keys/ssh_dracut_rsa_key
+  281  ssh-keygen -t ecdsa -m PEM -f /root/dracut-keys/ssh_dracut_ecdsa_key
+  282  ssh-keygen -t ed25519 -m PEM -f /root/dracut-keys/ssh_dracut_ed25519_key
+  283  vi /etc/dracut.conf.d/crypt-ssh.conf
+  284  dracut -f -v
+  285  vi /etc/dracut.conf.d/crypt-ssh.conf
+  286  cd dracut-keys/
+  287  ls -la
+  288  cat ssh_dracut_ecdsa_key.pub > authorized_keys
+  289  ls -la
+  290  cat authorized_keys 
+  291  ls -la
+  292  cat ssh_dracut_ed25519_key.pub > authorized_keys 
+  293  cat ssh_dracut_ecdsa_key.pub > authorized_keys
+  294  cat ssh_dracut_ed25519_key.pub >> authorized_keys 
+  295  cat ssh_dracut_rsa_key.pub >> authorized_keys 
+  296  cat authorized_keys 
+  297  dracut -f -v
+  298  cd
+  299  ls
+  300  ls -la
+  301  cd .ssh/
+  302  ls -la
+  303  cat authorized_keys 
+  304  rm authorized_keys 
+  305  ls -la
+  306  cd ..
+  307  dracut -f -v
+  308  ls -la
+  309  cd .ssh/
+  310  ls -l
+  311  ls -la
+  312  cd ../dracut-keys/
+  313  ls
+  314  ls -la
+  315  exit
+  316  dracut -f -v
+  317  reboot 
+  318  cd /etc/dracut.conf
+  319  vi /etc/dracut.conf
+  320  cd /etc/dracut.conf.d/
+  321  ls -la
+  322  vi crypt-ssh.conf 
+  323  exit
+  324  ls -l
+  325  cat .ssh/authorized_keys 
+  326  wq
+  327  dracut -v -f
+  328  vi crypt-ssh.conf 
+  329  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  330  cat /root/dracut-keys/ssh_dracut_rsa_key
+  331  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  332  cat /root/.ssh/authorized_keys
+  333  grub2-mkconfig --output /etc/grub2.cfg
+  334  dracut -v -f
+  335  man dracut
+  336  dracut -m
+  337  man dracut
+  338  dracut --list-modules
+  339  dracut --list-modules | less
+  340  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  341  dracut -v -f
+  342  reboot 
+  343  halt -P
+  344  halt -p
+  345  ls
+  346  ls -la
+  347  cd .ssh/
+  348  ls -la
+  349  cat authorized_keys 
+  350  ls -la
+  351  cat authorized_keys 
+  352  cd ..
+  353  ls -la
+  354  cd dracut-keys/
+  355  ls -la
+  356  cat authorized_keys 
+  357  history
+  358  ls -la
+  359  cd
+  360  ls -la
+  361  cd .gnupg/
+  362  ls -la
+  363  cd ..
+  364  ls -la
+  365  cat .autorelabel 
+  366  ls -la
+  367  ls -l
+  368  history > h.txt

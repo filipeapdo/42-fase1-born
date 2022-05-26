@@ -1,0 +1,312 @@
+=== Snapshot 8
+
+(...)
+  215  yum check-update
+  216  yum update
+  218  yum upgrade
+  219  yum install epel-release
+  222  yum check-update
+  223  yum uprade
+  224  yum update
+  225  wget -O /etc/yum.repos.d/rbu-dracut-crypt-ssh-epel-7.repo https://copr.fedorainfracloud.org/coprs/rbu/dracut-crypt-ssh/repo/epel-7/rbu-dracut-crypt-ssh-epel-7.repo
+  226  yum install wget
+  227  cd
+  228  cd /etc/yum.repos.d
+  229  ls -la
+  230  cat epel.repo 
+  231  vi epel.repo 
+  232  vi rbu-dracut-crypt-ssh-epel-7.repo
+  233  yum install dracut-crypt-ssh
+  234  dracut --force
+  235  cd
+  236  ls -la
+  237  mkdir .ssh
+  238  dracut --force
+  239  cd /etc/dracut.conf.d/crypt-ssh.conf 
+  240  cd /etc/dracut.conf.d
+  241  ls -la
+  242  vi crypt-ssh.conf
+  243  vi /etc/default/grub 
+  244  halt -p
+  245  ip a
+  246  vi /etc/default/grub
+  247  grub2-mkconfig --output /etc/grub2.cfg
+  248  dracut --force
+  249  cd /var/tmp/
+  250  ls
+  251  ls -la
+  252  cd
+  253  vi /etc/grub2.cfg 
+  254  reboot
+  255  ls -la
+  256  cat .ssh/authorized_keys
+  257  dracut -f
+  258  dracut -f -v
+  259  cat /boot/initramfs-3.10.0-1160.62.1.el7.x86_64.img 
+  260  reboot
+  261  ls
+  262  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  263  dracut -f -v
+  264  reboot 
+  265  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  266  dracut -f
+  267  dracut -f -v
+  268  reboot
+  269  cd .ssh/
+  270  ls
+  271  ls -la
+  272  cat authorized_keys 
+  273  cd
+  274  ls -la
+  275  ls -l
+  276  ls -1
+  277  ls -l
+  278  umask 0077
+  279  mkdir /root/dracut-keys
+  280  ssh-keygen -t rsa -m PEM -f /root/dracut-keys/ssh_dracut_rsa_key
+  281  ssh-keygen -t ecdsa -m PEM -f /root/dracut-keys/ssh_dracut_ecdsa_key
+  282  ssh-keygen -t ed25519 -m PEM -f /root/dracut-keys/ssh_dracut_ed25519_key
+  283  vi /etc/dracut.conf.d/crypt-ssh.conf
+  284  dracut -f -v
+  285  vi /etc/dracut.conf.d/crypt-ssh.conf
+  286  cd dracut-keys/
+  287  ls -la
+  288  cat ssh_dracut_ecdsa_key.pub > authorized_keys
+  289  ls -la
+  290  cat authorized_keys 
+  291  ls -la
+  292  cat ssh_dracut_ed25519_key.pub > authorized_keys 
+  293  cat ssh_dracut_ecdsa_key.pub > authorized_keys
+  294  cat ssh_dracut_ed25519_key.pub >> authorized_keys 
+  295  cat ssh_dracut_rsa_key.pub >> authorized_keys 
+  296  cat authorized_keys 
+  297  dracut -f -v
+  298  cd
+  299  ls
+  300  ls -la
+  301  cd .ssh/
+  302  ls -la
+  303  cat authorized_keys 
+  304  rm authorized_keys 
+  305  ls -la
+  306  cd ..
+  307  dracut -f -v
+  308  ls -la
+  309  cd .ssh/
+  310  ls -l
+  311  ls -la
+  312  cd ../dracut-keys/
+  313  ls
+  314  ls -la
+  315  exit
+  316  dracut -f -v
+  317  reboot 
+  318  cd /etc/dracut.conf
+  319  vi /etc/dracut.conf
+  320  cd /etc/dracut.conf.d/
+  321  ls -la
+  322  vi crypt-ssh.conf 
+  323  exit
+  324  ls -l
+  325  cat .ssh/authorized_keys 
+  326  wq
+  327  dracut -v -f
+  328  vi crypt-ssh.conf 
+  329  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  330  cat /root/dracut-keys/ssh_dracut_rsa_key
+  331  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  332  cat /root/.ssh/authorized_keys
+  333  grub2-mkconfig --output /etc/grub2.cfg
+  334  dracut -v -f
+  335  man dracut
+  336  dracut -m
+  337  man dracut
+  338  dracut --list-modules
+  339  dracut --list-modules | less
+  340  vi /etc/dracut.conf.d/crypt-ssh.conf 
+  341  dracut -v -f
+  342  reboot 
+  343  halt -P
+  344  halt -p
+  345  ls
+  346  ls -la
+  347  cd .ssh/
+  348  ls -la
+  349  cat authorized_keys 
+  350  ls -la
+  351  cat authorized_keys 
+  352  cd ..
+  353  ls -la
+  354  cd dracut-keys/
+  355  ls -la
+  356  cat authorized_keys 
+  357  history
+  358  ls -la
+  359  cd
+  360  ls -la
+  361  cd .gnupg/
+  362  ls -la
+  363  cd ..
+  364  ls -la
+  365  cat .autorelabel 
+  366  ls -la
+  367  ls -l
+  368  history > h.txt
+
+=== Snapshot 6
+
+(...)
+  189  lsblk
+  193  ls -la /dev/mapper/
+  192  lsblk
+  195  vi /etc/crypttab
+  194  vi /etc/default/grub
+  191  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+  190  ls -la /dev/mapper/
+  196  grub2-mkconfig
+  197  dracut
+  198  dracut --force
+  199  reboot
+  200  lsblk
+  201  history
+
+=== Snapshot 2
+    1  pwd
+    2  lsblk
+    3  halt -P
+    4  halt -p
+    5  list disks
+    6  fdisk -l
+    7  cd mn
+    8  cd mnt
+    9  cd
+   10  ls
+   11  pwd
+   12  cd ..
+   13  cd mnt/
+   14  ls
+   15  ls -la
+   16  cd ..
+   17  cd
+   18  vi /etc/fstab 
+   19  vi /etc/crypttab 
+   20  vi /etc/fstab 
+   21  ls /dev/mapper/
+   22  mv /dev/mapper/luks-4f3689db-b121-4d26-a110-ec198094d02d /dev/mapper/sda2_crypt
+   23  ls /dev/mapper/
+   24  vi /etc/crypttab 
+   25  cat /etc/crypttab 
+   26  ls /dev/mapper/
+   27  lsblk
+   28  ls /etc
+   29  ls /etc | init
+   30  ls /etc | grep init
+   31  lsblk
+   32  cryptsetup --help
+   33  man cryptsetup
+   34  reboot
+   35  lsblk
+   36  vi /etc/crypttab 
+   37  vi /etc/fstab 
+   38  lsblk
+   39  ip a
+   40  exit
+   41  lsblk
+   42  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   43  update-initramfs -u -k all
+   44  ls /dev/mapper/
+   45  update grub
+   46  update-grub
+   47  reboot
+   48  lsblk
+   49  cd /boot/grub/
+   50  ls -l
+   51  ls -la
+   52  pwd
+   53  cd
+   54  cd /dev
+   55  ls
+   56  cd mapper/
+   57  ls
+   58  ls -la
+   59  vgscan
+   60  lsblk
+   61  cd /boot/grub
+   62  ls
+   63  vi /etc/fstab 
+   64  vi /etc/crypttab 
+   65  dmsetup 
+   66  lsblk 
+   67  ls /dev/mapper/
+   68  cat /dev/mapper/control 
+   69  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   70  update-initramfs -c -t -k all
+   71  cd
+   72  cd /
+   73  ls
+   74  cd dev/
+   75  ls
+   76  cd
+   77  lsblk
+   78  ls /dev/mapper/
+   79  reboot
+   80  lsblk
+   81  vi /etc/crypttab 
+   82  dmsetup ls
+   83  ls /dev/mapper/
+   84  dmsetup table luks-4f3689db-b121-4d26-a110-ec198094d02d
+   85  vi /etc/default/grub
+   86  vi /boot/grub2/grub.cfg 
+   87  vi /etc/default/grub
+   88  lsblk
+   89  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   90  lsblk
+   91  reboot
+   92  lsblk
+   93  vi /etc/default/grub 
+   94  lsblk
+   95  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+   96  lsblk
+   97  ls /dev/mapper/
+   98  grub2-mkconfig 
+   99  vi /etc/fstab 
+  100  vi /etc/crypttab 
+  101  reboot
+  102  lsbl
+  103  vi /boot/grub2/device.map 
+  104  vi /boot/grub2/grubenv 
+  105  vi /boot/grub2/grub.cfg 
+  106  vi /etc/default/grub 
+  107  vi /etc/grub2.cfg 
+  108  cd /etc/grub.d/
+  109  ls
+  110  vi README 
+  111  cd
+  112  find 4f3689db
+  113  vi /etc/grub.d/10_linux 
+  114  vi /etc/default/grub 
+  115  lsblk
+  116  dmsetup rename luks-4f3689db-b121-4d26-a110-ec198094d02d sda2_crypt
+  117  lsblk
+  118  grub2-mkconfig 
+  119  dracut --help
+  120  dracut --help | grep upda
+  121  dracut --help | grep upd
+  122  ls /dev/m
+  123  ls /dev/mapper/
+  124  cd /boot/
+  125  ls
+  126  man drac
+  127  man dracut
+  128  dracut --force
+  129  lsblk
+  130  reboot]
+  131  reboot
+  132  ls
+  133  cd
+  134  cd /home/
+  135  ls
+  136  ls -la
+  137  cd
+  138  ls -la
+  139  history > h.txt
